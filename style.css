@@ -11,6 +11,7 @@
   --s-md: 1rem;
   --s-lg: 2rem;
   --s-xl: 4rem;
+  --s-xl2: 8rem;
 }
 
 * {
@@ -32,4 +33,28 @@ body {
   min-height: 100vh;
   position: relative;
   right: 20%;
+}
+
+h1 {
+  font-size: var(--s-xl);
+}
+
+.container {
+  display: flex;
+  column-gap: var(--s-xl);
+}
+
+.container__time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__time {
+  font-size: var(--s-xl2);
+}
+
+.container__legend {
+  font-size: var(--s-lg);
+  margin-top: -2rem;
 }
